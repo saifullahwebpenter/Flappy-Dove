@@ -1,0 +1,148 @@
+        /* GAME CSS */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: rgb(174, 215, 231);
+            font-family: Arial, sans-serif;
+            user-select: none;
+        }
+        :root {
+            --bg-color:#1E1E2C ;  
+            --text-color: #4B0082; 
+            --hover-color:#6b00b8b7;
+            --light-purple-color:#d192ff;
+        }
+        canvas {
+            display: block;
+        }
+        
+        #gameCanvas {
+            background: var(--bg-color);
+        }
+        
+          /* Custom styles for the buttons */
+          #startNewGameButton {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 6px 12px;
+            font-size:18px;
+            background-color: var(--text-color);
+            color: #fff;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #startNewGameButton:hover {
+            background-color: #45a049;
+        }
+        
+        #gameOver {
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            display: none;
+        }
+        
+        #restartButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background:var(--text-color) ;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        #restartButton:hover {
+            background: var(--hover-color);
+        }
+        
+        #countdown {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 48px;
+            text-align: center;
+            display: none;
+        }
+        
+        #gameStarted {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 36px;
+            text-align: center;
+            display: none;
+        }
+        
+        .fa-dove {
+            color: #FFFF00;
+            font-size: 30px;
+        }
+        
+        /* RECORDS CSS */
+        
+        #recordsButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background: var(--text-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        #recordsButton:hover {
+            background: var(--hover-color);
+        }
+        
+        .records-model {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            z-index: 1000;
+            gap: 20px;
+            flex-direction: column;
+        }
+        
+        .records-model h2 {
+            margin-bottom: 20px;
+        }
+        
+        #recordsList {
+            height: 300px;
+            overflow: auto;
+            list-style-type: none;
+            padding: 0 10px 0 0;
+        }
+        
+        #recordsList li {
+            margin: 10px 0;
+        }
+        
